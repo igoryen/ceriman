@@ -1,0 +1,162 @@
+/* Add here all your CSS customizations */
+.bluedark_text {
+	
+		color:#054877;
+}
+
+.formStyle{
+  background-color: #f2f5f8;
+  border:1px solid #fff;
+}
+
+html .btn-primary {
+    color: #ffffff;
+    background-color: #054877;
+    border-color: #054877 #054877 #054877;
+}
+
+body .btn-primary:hover {
+    border-color: #4dbb6d;
+    background-color: #4dbb6d;
+    border-color: #4dbb6d !important;
+    /* color: #FFF; */
+}
+
+.customwidth {
+	
+	width:200px !important;
+}
+
+:required {
+  background: white;
+}
+
+input:required {
+  box-shadow: 1px 1px 6px rgba(200, 0, 0, 0.4);
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a focus state
+ */
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+select:required:hover {
+  opacity: 0.6;
+}
+
+select:required {
+  box-shadow: 1px 1px 6px rgba(200, 0, 0, 0.4);
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a focus state
+ */
+select:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a hover state
+ */
+select:required:hover {
+  opacity: 0.6;
+}
+
+.grayback1{
+	
+	background-color: #b3b5b2 !important;
+}
+
+.grayback2{
+	
+	background-color: #d6d7d5 !important;
+}
+
+.grayback3{
+	
+	background-color: #ecedec !important;
+}
+
+
+
+/* Featured Box */
+.featured-box1 {
+	background: #F5F5F5;
+	background: -webkit-linear-gradient( top , #FFF 1%, #fcfcfc 98%) repeat scroll 0 0 transparent;
+	background: linear-gradient(to bottom, #FFF 1%, #fcfcfc 98%) repeat scroll 0 0 transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid #DFDFDF;
+	border-left: 1px solid #ECECEC;
+	border-radius: 8px;
+	border-right: 1px solid #ECECEC;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	min-height: 100px;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.featured-box1 h4 {
+	font-size: 1.3em;
+	font-weight: 400;
+	letter-spacing: -0.7px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.featured-box1 .box-content {
+	border-radius: 8px;
+	border-top: 1px solid #CCC;
+	border-top-width: 4px;
+	padding: 30px 30px 10px 30px;
+	position: relative;
+	top: -1px;
+}
+
+.featured-box1 .learn-more {
+	display: block;
+	margin-top: 10px;
+}
+
+/* Featured Box Left */
+.featured-box1-text-left {
+	text-align: left;
+}
+
+/* Featured Boxes - Flat */
+.featured-boxes1-flat .featured-box {
+	box-shadow: none;
+	margin: 10px 0;
+}
+
+.featured-boxes1-flat .featured-box .box-content {
+	background: #ffffff;
+	margin-top: 65px;
+}
+
+.featured-boxes1-flat .featured-box .icon-featured {
+	display: inline-block;
+	font-size: 38px;
+	height: 90px;
+	line-height: 90px;
+	padding: 0;
+	width: 90px;
+	margin: -100px 0 -15px;
+	position: relative;
+	top: -37px;
+}
+
+

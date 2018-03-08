@@ -1,0 +1,372 @@
+//==========================
+//	DEBUG
+//==========================
+
+	// .anthony {
+	// 	border: 1px solid #e6e6e6;
+	// }
+
+	// .barbara {
+	// 	border: 1px solid #b3b3b3;
+	// }
+
+	// .betty {
+	// 	border: 1px solid #b3b3b3;
+	// }
+
+
+//==========================
+//	IMPORTS
+//==========================
+
+	@import url('https://fonts.googleapis.com/css?family=Sintony');
+
+//==========================
+//	VARIABLES
+//==========================
+	
+	$main_font_size: 16px;
+
+
+
+
+
+
+
+
+.betty {
+	display: flex;
+    justify-content: center;
+    // padding-bottom: 10px;
+}
+
+.carol {
+	&.turn {
+		-ms-transform: rotate(360deg); /* IE 9 */
+	    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+	    transform: rotate(360deg);
+	    transition-duration: .5s;
+	}
+}
+
+
+
+
+
+.christopher {
+	// background-color: #ebf5fb;
+	display: flex;
+    justify-content: center;
+    // background-color: #094976;
+
+
+ //    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ebf5fb+100&0+0,1+100 */
+	// background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,245,251,1) 100%); /* FF3.6-15 */
+	// background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(235,245,251,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(235,245,251,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ebf5fb',GradientType=0 ); /* IE6-9 */
+
+
+	// /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,a0d3f8+100&0+0,1+100 */
+	// background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(160,211,248,1) 100%); /* FF3.6-15 */
+	// background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(160,211,248,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(160,211,248,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a0d3f8',GradientType=0 ); /* IE6-9 */
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d0e9fb+100&0+0,1+100 */
+	// background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(208,233,251,1) 100%); /* FF3.6-15 */
+	// background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(208,233,251,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(208,233,251,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d0e9fb',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.daniel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: -20px;
+	padding-bottom: 1em;
+}
+
+.david {
+	text-align: center;
+
+	//-- v2 --
+	&.headline {
+		// background-color: #1292ed;
+		background-color: #094976;
+
+		
+		border-radius: 15px;
+		margin-bottom: 10px;
+		padding: 10px 20px;
+
+		.brian {
+			color: #fff !important;
+		}
+	}
+	//-----
+}
+
+//==========================
+//	SEPARATOR (https://codepen.io/igoryen/pen/OxzQqQ)
+//==========================
+
+	$height: 16px;
+	$halfheight: ($height/2);
+	$thickness: 110%; // increase to make the line thicker
+	$offset: 4px;
+	// $backgroundcolor: #F7F2E2;
+	$backgroundcolor: #yellow;
+
+	// $linecolor: #F7A9B9;
+	$linecolor: red;
+	// $linecolor: #d0e9fb;
+
+
+	// body {
+	// 	background: $backgroundcolor;
+	// }
+
+	.zigzag {
+		margin-top: -18px;
+		margin-bottom: 20px;
+		// margin: 7.5% 0;
+		background: $backgroundcolor;
+		position: relative;
+		height: $height;
+		z-index: 1;
+		&:before,
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+	  		right: 0;
+		}
+		&:before {
+			height: ($height - $offset);
+			top: $thickness;
+			background: linear-gradient(-135deg, $linecolor $halfheight, transparent 0) 0 $halfheight, linear-gradient( 135deg, $linecolor $halfheight, transparent 0) 0 $halfheight;
+			background-position: top left;
+			background-repeat: repeat-x;
+			background-size: $height $height;
+		}
+		&:after {
+			height: $height;
+			top: 100%;
+			background: linear-gradient(-135deg, $backgroundcolor $halfheight, transparent 0) 0 $halfheight, linear-gradient( 135deg, $backgroundcolor $halfheight, transparent 0) 0 $halfheight;
+			background-position: top left;
+			background-repeat: repeat-x;
+			background-size: $height $height;
+		}
+	}
+
+//==========================
+//	MEDIA QUERIES
+//==========================
+
+
+@media screen and (min-width: 320px) {
+
+	.anthony {
+		display: flex;	
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 15px;
+		margin-top: 10px;
+	}
+
+	.anthony, .betty {
+		font-family: "Sintony", sans-serif;
+	}
+
+	.barbara {
+		// background: 	rgba(255, 255, 255, 0%);
+		border-radius: 10px;
+		// display: flex; // desktop
+		display: block;
+
+		font-weight: bold;
+		padding: 5px;
+		text-align: center;
+		transition: all .5s ease-in-out;
+		// width: 15%; // desktop
+		width: 100%;
+
+	    // flex-direction: column; // desktop
+	    flex-direction: row; 
+
+
+		&.money {
+			color: #229B55;
+		}
+		&.mobile {
+			color: #86381C;
+		}
+		&.computer {
+			color: #2E86C1;
+		}
+		&.alerts {
+			color: #E64C3C;
+		}
+		&.security {
+			color: #283747;
+		}
+		&.services {
+			color: #7D3D97;
+		}
+		&.lawyer {
+			color: #e74c3c;
+		}
+		&.signature {
+			color: #229954;
+		}
+
+		
+	}
+
+	.brian {
+
+		// color: #202020;
+		color: #094976;
+		font-size: $main_font_size;
+		
+
+		&.large {
+			font-size: $main_font_size * 1.125;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+	}
+
+	.carol {
+		img {
+			// width: 6em; // desktop
+			float: left; // mobile
+			width: 3em; // mobile
+    		margin-right: 1em; // mobile
+			transition: all .2s ease-in-out;
+			// &:hover {
+			// 	transform: rotate(30deg);
+			// }
+		}
+	}
+	.charles {
+		
+		font-size: $main_font_size;
+		padding: 0 5px;
+		text-align: left;
+
+	}
+
+	.deborah {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	
+
+	#header {
+		.header-column {
+			align-items: center;
+	        display: flex;
+	        justify-content: center;
+
+	        div:first-child {
+		        float: none;
+		        img {
+					width: 110px;
+				}
+		    }
+		    div:last-child {
+		        float: none;
+		        img {
+					width: 145px;
+				}
+		    }
+
+
+	    }
+	   
+	}
+
+
+}
+
+@media screen and (min-width: 500px) {
+
+	.barbara {
+		align-items: center;
+		display: flex;
+	}
+	.carol {
+		img {
+			
+		width: 4em; // mobile
+    		
+		}
+	}
+	.david {
+		line-height: 1.7em;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.anthony {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.barbara {
+		align-items: center;
+		flex-direction: column;
+		// padding: 5px;
+		// text-align: center;
+		width: 15%;
+	}
+
+	.brian {
+		font-size: $main_font_size * 1.125;
+		&.large {
+			font-size: $main_font_size * 1.5;
+		}
+	}
+
+	.carol {
+		img {
+			margin-right: 0;
+			width: 6em; // desktop
+		}
+	}
+
+	.charles {
+		font-size: $main_font_size * 0.875;
+		margin-top: 10px; // desktop
+		text-align: center;
+	}
+
+	.david {
+		line-height: 2.2em;
+	}
+
+	#header {
+		.header-column {
+
+	        div:first-child {
+		        img {
+					width: 140px;
+				}
+		    }
+		    div:last-child {
+		        img {
+					width: 196px;
+				}
+		    }
+
+
+	    }
+	   
+	}
+}
